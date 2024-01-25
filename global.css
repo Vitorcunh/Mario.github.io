@@ -31,6 +31,13 @@ button:hover {
   cursor: pointer;
 }
 
+.Mario-center {
+  align-items: center;
+  grid-template-columns: 1fr;
+  width: 400px;
+  height: auto;
+}
+
 #app {
   display: flex;
   flex-direction: column;
@@ -40,42 +47,85 @@ button:hover {
   height: 100vh;
   overflow: hidden;
 }
+
 @media (max-width: 800px) {
+  .navigation__social,
+  .Mario img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .Mario-center {
+    grid-template-columns: auto;
+    width: 50%;
+    align-items: center;
+  }
   .importante-img {
+    align-items: center;
+    display: flex;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 30px;
+    font-family: 10px;
+  }
+  .navigation,
+  .navegation__link a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Mario-center {
+    width: 60%;
+    height: 50%;
+    align-items: center;
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .texto-princi {
+    font-size: 1px;
+    font-family: 1px;
+  }
+  .importante-img {
+    font-size: 20px;
+    font-family: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Mario-center {
+    display: none;
+  }
+  .importante-img img {
+    margin-top: 20px;
+    align-items: center;
+    width: 7rem;
     grid-template-columns: 1fr;
-    padding: 60px 20px;
-    gap: 40px;
-    max-width: 100%;
-    height: auto;
+   }
+   .navigation,
+   .navegation__link a {
+     grid-template-columns: 1fr 1fr;
+     gap: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .Mario-center {
+    display: none;
+  }
+  .navigation,
+  .navegation__link a {
     display: block;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 800px) {
-  .navigation__social {
-    right: 10px;
-    font-size: 0.5px;
-    display: grid;
-    grid-template-columns: repeat(1, 0.5fr); /* Exemplo com 3 colunas */
-    gap: 5px;
-    align-items: end; /* Alinha os itens na parte inferior da célula */
-  }
-}
-@media (max-width: 800px) {
-  .Mario {
-    justify-items: center;
-    border-top: 10px;
-  }
-}
-
-@media (max-width: 800px) {
-  .navegation {
-    right: 10px;
-    font-size: 0.5px;
-    display: grid;
-    grid-template-columns: repeat(1, 0.5fr); /* Exemplo com 3 colunas */
-    gap: 5px;
-    align-items: end; /* Alinha os itens na parte inferior da célula */
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

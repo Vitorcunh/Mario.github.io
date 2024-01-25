@@ -6,15 +6,16 @@
   <title>The Super Mario Bros</title>
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <linke real="prelod" href="./img/background-video.mp4" as="style">
+    <link rel="stylesheet" href="./global.css">
 
-  <link rel="stylesheet" href="./global.css">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="total">
   <div id="background">
     <video loop autoplay muted>
       <source src="./img/background-video.mp4" type="video/mp4">
@@ -27,7 +28,7 @@
 
       <ul class="navigation">
         <li>
-          <a href="#" class="navegation__link">Home</a>
+          <a href="#" class="navegation__link ">Home</a>
         </li>
         <li>
           <a href="#" class="navegation__link">Story</a>
@@ -63,22 +64,26 @@
       <div class="main__info">
         <img data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" src="./img/logo-movie.png" width="170px" alt="">
 
-        <p class="texto" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-easing="ease-in-out">Um dia, Mario e Luigi vão para no reino dos cogumelos, governado pela Princesa Peach,
+        <!-- <p class="texto" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-easing="ease-in-out"> -->
+          <p class="texto-princi">Um dia, Mario e Luigi vão para no reino dos cogumelos, governado pela Princesa Peach,
           mas ameaçado pelo rei dos Koopas, Bowser, que vai fazer de tudo para conseguir
           reinar todos os lugares. É então quando Luigi é raptado por Bowser e o usa para
           procurar Mario, o único capaz de deter o Koopa e reestabelexcer a paz.</p>
+          
 
-        <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="800" data-aos-easing="ease-in-out">
+        <!-- <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="800" data-aos-easing="ease-in-out"> -->
+
+          <div>
 
 
 
           <a href="https://youtu.be/cDNkh5WybZo?si=Gv6IIRj3yP0FSiuK" target="_blank">Assistir trailer</a>
-          <button>
+          <button class="botão">
             Comprar ingresso
           </button>
         </div>
       </div>
-      <img class="Mario" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800" data-aos-easing="ease-in-out" src="./img/mario-and-luigi.png" width="350px" alt="">
+      <img class="Mario-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800" data-aos-easing="ease-in-out" src="./img/mario-and-luigi.png" width="350px" alt="">
     </main>
   </div>
 
@@ -92,4 +97,3 @@
 </body>
 
 </html>
-

@@ -46,13 +46,13 @@ header img {
 
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.4s;
+
 }
 
 .navegation__link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-  transition: transform 0.4s;
+
 }
 
 .navigation__social {
@@ -68,11 +68,12 @@ header img {
   height: 20px;
   opacity: 0.6;
 
-  transition: all 0.4s;
+  
 }
 
 .navigation__social svg:hover {
   opacity: 1;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   cursor: pointer;
 }
+
